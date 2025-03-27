@@ -61,20 +61,40 @@
             
             <div class="col-md-6">
                 <label for="shippingMethod" class="form-label">Rodzaj przesyłki</label>
-                <select class="form-select" id="shippingMethod" required>
-                    <option value="">Wybierz rodzaj przesyłki</option>
-                    <option value="DPD">DPD</option>
-                    <option value="InPost">InPost</option>
-                </select>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      DPD
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      InPost
+                    </label>
+                  </div>
             </div>
             <div class="col-md-6">
                 <label for="paymentMethod" class="form-label">Rodzaj płatności</label>
-                <select class="form-select" id="paymentMethod" required>
-                    <option value="">Wybierz rodzaj płatności</option>
-                    <option value="karta">Karta</option>
-                    <option value="blik">BLIK</option>
-                    <option value="pośrednik">Pośrednik płatności</option>
-                </select>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Karta
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      BLIK
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Pośrednik płatności
+                    </label>
+                  </div>
+                
             </div>
 
             <!-- Dodatkowe pola, np. dane do faktury -->
@@ -85,10 +105,7 @@
                     <input type="email" class="form-control" id="exampleInputEmail1">
                 </div>
             </div>
-            <div class="col-12">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
+            
             <div class="col-12 form-check" style="margin-left: 1%;">
                 <input type="checkbox" class="form-check-input" id="vatUE">
                 <label class="form-check-label" for="vatUE">VAT UE</label>
@@ -104,7 +121,7 @@
                 <label for="invoiceData" class="form-label">Dane do faktury</label>
                 <textarea class="form-control" id="invoiceData" rows="3" placeholder="Wpisz dane do faktury"></textarea>
             </div>
-            <div class="col-12">
+            <div class="col-12" style="margin-bottom: 2%;">
             <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#form-feedback-modal">submit</button>
             </div>
